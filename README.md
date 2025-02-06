@@ -29,7 +29,7 @@ Ce projet consiste à concevoir un robot télécommandé via Bluetooth grâce à
 | **Moteurs DC** | GA12-N20 (6V, 200 RPM) x2 | Déplacement du robot |
 | **Driver moteur** | TB6612FNG | Pilotage des moteurs |
 | **Batterie** | LiPo 7.4V (capacité à préciser) | Alimentation du système |
-| **Régulateurs de tension** | 7.4V → 5V, 5V → 3.3V | Alimentation des composants |
+| **Régulateurs de tension** | 7.4V → 5V (R-78B5.0-2.0), 5V → 3.3V (BU33SD5WG-TR)| Alimentation des composants |
 | **Capteur ultrason** | HC-SR04 | Détection d'obstacles |
 | **Servomoteurs** | (modèle à préciser) x2 | Actionneurs divers |
 | **LEDs** | 2x minimum | Indicateurs visuels |
@@ -42,7 +42,7 @@ Notre PCB 4 couches comprend :
 - Connecteurs pour tous les composants (moteurs, capteurs, etc.)
 - **STM32** pour la gestion du robot
 - **Deux régulateurs de tension** :
-  - **7.4V → 5V** pour les moteurs et le module ultrason
+  - **7.4V → 5V** pour le module ultrason et les servomoteurs
   - **5V → 3.3V** pour le STM32 et le Bluetooth
 
 ---
