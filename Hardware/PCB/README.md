@@ -5,9 +5,9 @@ Ce projet est un PCB conçu pour contrôler un robot suiveur de ligne avec obsta
 
 ## 📸 Aperçu du PCB
 ### **Face Avant**
-![Front PCB](image.png)
+![Front PCB](c:\PROJET ENSEA S6\Projet_1A_S6\Hardware\PCB\image.png)
 ### **Face Arrière**
-![Back PCB](image-1.png)
+![Back PCB](c:\PROJET ENSEA S6\Projet_1A_S6\Hardware\PCB\image-1.png)
 
 ## 📦 Composants intégrés
 - **Microcontrôleur :** STM32L552CCTx
