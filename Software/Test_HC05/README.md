@@ -44,7 +44,7 @@ Extrait du code utilisé :
 ```c
 while (1)
 {
-    // Recevoir des données du HC05 via UART2
+    // Recevoir des données du HC05 via UART4
     if (HAL_UART_Receive(&huart4, (uint8_t*)&received_data, 1, 1000) == HAL_OK)
     {
         // Afficher le caractère reçu avec printf (via UART2)
@@ -63,7 +63,7 @@ while (1)
 ## 📊 Résultat du test
 Après l'envoi de caractères depuis PuTTY, ceux-ci sont correctement reçus et affichés sur la console de STM32CubeIDE :  
 
-### Connexion avec le module HC-05 via le port COM9 dans PuTTY :  
+### Configurer la console sur le port COM4 dans CubeIDE (pour le printf) :  
 ![Console dans CubeIDE](test_HC05_2.png)
 
 ### Réception des caractères sur STM32CubeIDE :  

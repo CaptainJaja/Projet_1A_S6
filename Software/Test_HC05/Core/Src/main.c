@@ -108,10 +108,10 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  // Recevoir des données du HC05 via UART2
+	  // Recevoir des données du HC05 via UART4
 	          if (HAL_UART_Receive(&huart4, (uint8_t*)&received_data, 1, 1000) == HAL_OK)
 	          {
-	              // Afficher le caractère reçu avec printf (via UART4)
+	              // Afficher le caractère reçu avec printf (via UART2)
 	              printf("Caractère reçu : %c\n\r", received_data);
 	          }
     /* USER CODE END WHILE */
