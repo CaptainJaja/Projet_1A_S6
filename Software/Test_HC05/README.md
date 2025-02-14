@@ -73,11 +73,3 @@ Après l'envoi de caractères depuis PuTTY, ceux-ci sont correctement reçus et 
 Le test démontre que la communication entre le HC-05 et la STM32 fonctionne correctement via UART.  
 Le module HC-05 reçoit et transmet bien les données entre la carte et le PC, permettant ainsi un échange bidirectionnel efficace.  
 
----  
-✅ **Améliorations possibles** :  
-- Tester la communication bidirectionnelle avec une réponse de la STM32 vers PuTTY.  
-- Ajouter des commandes pour interpréter des messages spécifiques envoyés par Bluetooth.  
-
----  
-🎯 **Auteur** : Projet réalisé avec une STM32 Nucleo L476RG et le module HC-05.
-
