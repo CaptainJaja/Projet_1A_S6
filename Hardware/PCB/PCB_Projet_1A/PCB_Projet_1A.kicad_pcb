@@ -4223,7 +4223,7 @@
 			(uuid "81d4b755-4faf-445d-84b1-0c069ef67b52")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 6.35 360)
+			(at 0 6.35 0)
 			(layer "F.Fab")
 			(uuid "ed0f4d61-70ab-4bf1-8ce0-5819fce17830")
 			(effects
@@ -11834,6 +11834,30 @@
 		(layer "Edge.Cuts")
 		(uuid "eea5782e-d834-4aca-bb7a-507a51dde13c")
 	)
+	(gr_text "uart4_tx"
+		(at 166.8 70.5 270)
+		(layer "B.SilkS")
+		(uuid "b67cdaee-8cc6-437c-8274-ae5dd9cfb859")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "uart4_rx"
+		(at 164 70.5 -90)
+		(layer "B.SilkS")
+		(uuid "f0f7fb26-4176-4fb9-a9fe-a695cccd57a4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "PCB Projet 1A\nCapodagli Janus\nBui Hai Christophe\nMillon Raphaelle"
 		(at 183 86.5 0)
 		(layer "B.SilkS")
@@ -12788,6 +12812,30 @@
 					(xy 166.638553 85.245933) (xy 166.713276 85.240429)
 				)
 			)
+		)
+	)
+	(gr_text "vcc"
+		(at 159 67 -90)
+		(layer "B.SilkS")
+		(uuid "f6e7b147-3755-4290-a601-8ea4ff2e6c93")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "vcc"
+		(at 157.5 61.5 0)
+		(layer "F.SilkS")
+		(uuid "3a2f5e21-d0d8-4b10-a59f-7764f161a1e0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
 		)
 	)
 	(via
@@ -23648,7 +23696,7 @@
 		(polygon
 			(pts
 				(xy 153.475 69.8) (xy 153.525 71.6) (xy 153.55 70.85) (xy 153.55 86.1) (xy 159.1 86.1) (xy 159.1 93.05)
-				(xy 168.65 93.1) (xy 168.75 114.2) (xy 186.3 114.2) (xy 186.25 69.5) (xy 177.5 69.45) (xy 177.5 69.45)
+				(xy 168.65 93.1) (xy 168.75 114.2) (xy 186.3 114.2) (xy 186.25 69.5) (xy 177.5 69.45)
 			)
 		)
 		(filled_polygon
