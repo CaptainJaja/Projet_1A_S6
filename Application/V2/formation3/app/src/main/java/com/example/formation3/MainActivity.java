@@ -9,6 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
+import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -161,6 +162,11 @@ public class MainActivity extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.S)
     private void scanForDevices() {
+        if (bluetoothAdapter == null) {
+            Toast.makeText(this, "Bluetooth not supported on this device", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         if (!bluetoothAdapter.isEnabled()) {
             Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
             startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
@@ -181,22 +187,31 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        // Clear previous list
-        deviceList.clear();
-        bluetoothDevices.clear();
-        adapter.notifyDataSetChanged();
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+            Toast.makeText(this, "Please enable location services for Bluetooth scanning", Toast.LENGTH_LONG).show();
+            startActivity(new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+        }
+
 
         // Cancel ongoing discovery
         if (bluetoothAdapter.isDiscovering()) {
             bluetoothAdapter.cancelDiscovery();
         }
 
+        // Clear previous list
+        deviceList.clear();
+        bluetoothDevices.clear();
+        adapter.notifyDataSetChanged();
+
+
+
         // Register the receiver before discovery to avoid missing devices
         IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
         registerReceiver(receiver, filter);
 
         // Start discovering new devices
-        boolean started = bluetoothAdapter.startDiscovery();
+        boolean started = bluetoothAdapter.startDiscovery();  // ici ya un prblm
         if (started) {
             Toast.makeText(this, "Scanning for devices...", Toast.LENGTH_SHORT).show();
         } else {

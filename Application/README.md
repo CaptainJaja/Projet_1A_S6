@@ -98,3 +98,29 @@ On arrive maintenant à activer le Bluetooth à partir de l'application :
 
 Or, la liste d'appareils ne s'affiche toujours pas.  
 Je suis incertain de la cause de l'erreur.
+
+
+---
+
+# Séance du 27/03/2025
+
+
+J'ai réussi à faire en sorte que la liste s'affiche:
+
+![Capture d'écran 3](capture_3.jpg)
+
+
+Il fallait enfaite activer aussi la localisation de l'appareil.
+
+
+
+
+
+
+
+
+
+
+
+
+
