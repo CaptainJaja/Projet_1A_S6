@@ -73,7 +73,7 @@ Notre projet comporte **deux versions de PCB** :
 | Nom | Tâche principale |
 |-----------|----------------|
 | **CAPODAGI Janus** | Conception PCB (https://github.com/CaptainJaja/Projet_1A_S6/tree/main/Hardware/PCB),  code STM32 (https://github.com/CaptainJaja/Projet_1A_S6/tree/main/Software/Code)|
-| **BUI HAI Christophe** | Développement de l’application Android |
+| **BUI HAI Christophe** | Développement de l’application Android (https://github.com/CaptainJaja/Projet_1A_S6/tree/main/Application)|
 | **MILLON Raphaëlle** | Conception mécanique du robot (modélisation 3D, intégration Raspberry) |
 
 ---
