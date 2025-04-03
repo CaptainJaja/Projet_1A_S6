@@ -7,7 +7,7 @@ Ce projet consiste à concevoir un robot télécommandé via Bluetooth grâce à
 ## 📌 Cahier des charges
 
 ### 🔹 Robot
-- Communication **UART** avec le module **Bluetooth HC-06 / HC-05**  
+- Communication **UART** avec le module **Bluetooth HC-05**  
 - **Contrôle de deux moteurs DC à encodeurs** via un driver **TB6612FNG**  
 - **Lecture des encodeurs** pour faire de l'**odométrie**  
 - **Connexion à une Raspberry Pi** pour supervision et traitement via **ROS**  
@@ -45,8 +45,8 @@ Ce projet consiste à concevoir un robot télécommandé via Bluetooth grâce à
 Notre projet comporte **deux versions de PCB** :
 
 ### V1 : Prototype de base
-- Connecteurs moteurs, servo, HC-SR04, HC-06
-- Pas d'encodeur, ni module infrarouge, ni Raspberry Pi
+- Connecteurs moteurs, servo, HC-SR04, HC-05 ; Driver ; STM
+- Pas d'encodeur, ni module infrarouge, ni connecteurs pour la Raspberry Pi
 
 ### V2 : Version finale
 - Connecteurs pour les **encodeurs**, la **Raspberry Pi**, et le **module infrarouge** ajoutés
@@ -80,10 +80,8 @@ Notre projet comporte **deux versions de PCB** :
 
 ## 📝 Remarques et pistes d'amélioration
 
-- Intégrer un retour d'information via Bluetooth (ex: état batterie, distance d'obstacle, vitesse moteur)
 - Ajouter un schéma de l'architecture du système (STM32 + Raspberry + ROS)
-- Optimiser la durée de vie de la batterie selon l'autonomie mesurée
-- Tester la communication entre STM32 et Raspberry via UART ou SPI
+- Tester la communication entre STM32 et Raspberry via UART 
 
 ---
 
