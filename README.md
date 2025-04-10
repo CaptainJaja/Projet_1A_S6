@@ -59,11 +59,11 @@ Notre projet comporte **deux versions de PCB** :
 | Séance | Avancement |
 |--------|------------|
 | Séance 1 | Répartition des tâches (modélisation 3D / code + PCB / appli Android), choix des composants |
-| Séance 2 | Début du PCB V1 (sans encodeur, Raspberry, infrarouge), début appli Android et modélisation mécanique |
-| Séance 3 | Finalisation du PCB V1 |
-| Séance 4 | Début des tests du **module infrarouge** |
+| Séance 2 | - Début du PCB V1 (sans encodeur, Raspberry, infrarouge) <br>- Début application Android <br>- Début modélisation mécanique |
+| Séance 3 | - Finalisation du PCB V1 <br>- 1ère version de l'application (nombreuses fonctionnalités manquantes)|
+| Séance 4 | - Début des tests du **module infrarouge** <br>- Implémentation des fonctionnalités mais beaucoup d'erreurs|
 | Séance 5 | Finalisation de la **commande à distance** (prototype robot avec HC-05) |
-| Séance 6 | Début du PCB V2 (ajout Raspberry, encodeurs, infrarouge) |
+| Séance 6 | - Début du PCB V2 (ajout Raspberry, encodeurs, infrarouge) <br>- Plus d'erreurs grâce aux bonnes permissions demandées|
 | Séance 7 | Finalisation du modèle du PCB V2, **commande des composants et du PCB** |
 
 ---

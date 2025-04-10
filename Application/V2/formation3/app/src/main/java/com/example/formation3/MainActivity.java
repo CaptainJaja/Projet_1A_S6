@@ -80,8 +80,8 @@ public class MainActivity extends AppCompatActivity {
         lvDevices.setAdapter(adapter);
 
         // Set button listeners
-        btnForward.setOnClickListener(v -> sendCommand("F"));
-        btnBackward.setOnClickListener(v -> sendCommand("B"));
+        btnForward.setOnClickListener(v -> sendCommand(String.valueOf(0)));
+        btnBackward.setOnClickListener(v -> sendCommand(String.valueOf(1)));
         btnLeft.setOnClickListener(v -> sendCommand("L"));
         btnRight.setOnClickListener(v -> sendCommand("R"));
         btnStop.setOnClickListener(v -> sendCommand("S"));
