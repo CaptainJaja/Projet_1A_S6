@@ -121,7 +121,7 @@ Maintenant Je me concentre sur le " Front End":
 
 - J'ai modifié le l'icon de l'application avec un icon provisoire.
 
-![Icon1](Icon1.jpg)
+![Icon1](Icon1.png)
 
 J'ai appris à faire des "boutons images" :
 
