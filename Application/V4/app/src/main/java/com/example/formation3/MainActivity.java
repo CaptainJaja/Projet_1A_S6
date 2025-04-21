@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.location.LocationManager;
+import android.media.Image;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -67,10 +69,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Initialize buttons
-        Button btnForward = findViewById(R.id.btnForward);
-        Button btnBackward = findViewById(R.id.btnBackward);
-        Button btnLeft = findViewById(R.id.btnLeft);
-        Button btnRight = findViewById(R.id.btnRight);
+        ImageButton btnForward = findViewById(R.id.btnForward);
+        ImageButton btnBackward = findViewById(R.id.btnBackward);
+        ImageButton btnLeft = findViewById(R.id.btnLeft);
+        ImageButton btnRight = findViewById(R.id.btnRight);
         Button btnStop = findViewById(R.id.btnStop);
         Button btnLED = findViewById(R.id.btnLED);
         Button btnScan = findViewById(R.id.btnScan);
@@ -86,15 +88,15 @@ public class MainActivity extends AppCompatActivity {
         btnRight.setOnClickListener(v -> sendCommand("R"));
         btnStop.setOnClickListener(v -> sendCommand("S"));
         btnLED.setOnClickListener(v -> sendCommand("A"));
-
-        Intent discoverableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE);
-        discoverableIntent.putExtra(BluetoothAdapter.EXTRA_DISCOVERABLE_DURATION, 300); // 5 minutes
-        startActivity(discoverableIntent);
-
-        // Scan for devices when button is clicked
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             btnScan.setOnClickListener(v -> scanForDevices());
         }
+
+
+        Intent discoverableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE);
+        discoverableIntent.putExtra(BluetoothAdapter.EXTRA_DISCOVERABLE_DURATION, 300);
+        startActivity(discoverableIntent);
+
 
         // Connect to a device when selected from the list
         lvDevices.setOnItemClickListener((parent, view, position, id) -> {
@@ -121,6 +123,8 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+
+
         if (!bluetoothAdapter.isEnabled()) {
             Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
             startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
@@ -130,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
                 scanForDevices();
             }
         }
+
 
     }
 

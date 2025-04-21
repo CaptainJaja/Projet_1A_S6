@@ -113,6 +113,22 @@ J'ai réussi à faire en sorte que la liste s'affiche:
 Il fallait enfaite activer aussi la localisation de l'appareil.
 
 
+---
+
+# Séance du 27/03/2025
+
+Maintenant Je me concentre sur le " Front End":
+
+- J'ai modifié le l'icon de l'application avec un icon provisoire.
+
+![Icon1](Icon1.png)
+
+J'ai appris à faire des "boutons images" :
+
+![Capture d'écran 4](capture_4.jpg)
+
+Il ne reste plus qu'à faire des beaux sprites.
+
 
 
 

@@ -56,25 +56,25 @@ Notre projet comporte **deux versions de PCB** :
 
 ## ⏳ Tableau d'avancement du projet
 
-| Séance | Avancement |
-|--------|------------|
-| Séance 1 | Répartition des tâches (modélisation 3D / code + PCB / appli Android), choix des composants |
-| Séance 2 | Début du PCB V1 (sans encodeur, Raspberry, infrarouge), début appli Android et modélisation mécanique |
-| Séance 3 | Finalisation du PCB V1 |
-| Séance 4 | Début des tests du **module infrarouge** |
-| Séance 5 | Finalisation de la **commande à distance** (prototype robot avec HC-05) |
-| Séance 6 | Début du PCB V2 (ajout Raspberry, encodeurs, infrarouge) |
-| Séance 7 | Finalisation du modèle du PCB V2, **commande des composants et du PCB** |
+| Séance | Avancement                                                                                                                                                                                                           |
+|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Séance 1 | Répartition des tâches (modélisation 3D / code + PCB / appli Android), choix des composants                                                                                                                          |
+| Séance 2 | - Début du PCB V1 (sans encodeur, Raspberry, infrarouge) <br>- Début application Android <br>- Début modélisation mécanique                                                                                          |
+| Séance 3 | - Finalisation du PCB V1 <br>- 1ère version de l'application (nombreuses fonctionnalités manquantes)<br>-la conception 3D continue d'avancer                                                                         |
+| Séance 4 | - Début des tests du **module infrarouge** <br>- Implémentation des fonctionnalités mais beaucoup d'erreurs <br>-changement des dimensions de la structure 3D car changement d'agencement des éléments dans le robot |
+| Séance 5 | Finalisation de la **commande à distance** (prototype robot avec HC-05)<br>-la conception 3D continue d'avancer                                                                                                      |
+| Séance 6 | - Début du PCB V2 (ajout Raspberry, encodeurs, infrarouge) <br>- Plus d'erreurs grâce aux bonnes permissions demandées <br>- début de l'impression 3D                                                                |
+| Séance 7 | Finalisation du modèle du PCB V2, **commande des composants et du PCB** <br>-fin de l'impression 3D                                                                                                                  |
 
 ---
 
 ## 📋 Répartition des tâches
 
-| Nom | Tâche principale |
-|-----------|----------------|
-| **CAPODAGI Janus** | Conception PCB (https://github.com/CaptainJaja/Projet_1A_S6/tree/main/Hardware/PCB),  code STM32 (https://github.com/CaptainJaja/Projet_1A_S6/tree/main/Software/Code)|
-| **BUI HAI Christophe** | Développement de l’application Android (https://github.com/CaptainJaja/Projet_1A_S6/tree/main/Application)|
-| **MILLON Raphaëlle** | Conception mécanique du robot (modélisation 3D, intégration Raspberry) |
+| Nom | Tâche principale                                                                                                                                                       |
+|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **CAPODAGI Janus** | Conception PCB (https://github.com/CaptainJaja/Projet_1A_S6/tree/main/Hardware/PCB),  code STM32 (https://github.com/CaptainJaja/Projet_1A_S6/tree/main/Software/Code) |
+| **BUI HAI Christophe** | Développement de l’application Android (https://github.com/CaptainJaja/Projet_1A_S6/tree/main/Application)                                                             |
+| **MILLON Raphaëlle** | Conception mécanique du robot :modélisation 3D, intégration Raspberry (https://github.com/CaptainJaja/Projet_1A_S6/tree/main/Hardware/3D)                              |
 
 ---
 
