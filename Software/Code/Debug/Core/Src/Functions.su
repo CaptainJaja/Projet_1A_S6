@@ -1,0 +1,5 @@
+../Core/Src/Functions.c:13:6:Motor_Stop	8	static
+../Core/Src/Functions.c:22:6:Motor_Forward	8	static
+../Core/Src/Functions.c:31:6:Motor_Backward	8	static
+../Core/Src/Functions.c:40:6:Motor_Right	8	static
+../Core/Src/Functions.c:49:6:Motor_Left	8	static
