@@ -65,7 +65,8 @@ Notre projet comporte **deux versions de PCB** :
 | Séance 5 | Finalisation de la **commande à distance** (prototype robot avec HC-05)<br>-la conception 3D continue d'avancer                                                                                                      |
 | Séance 6 | - Début du PCB V2 (ajout Raspberry, encodeurs, infrarouge) <br>- Plus d'erreurs grâce aux bonnes permissions demandées <br>- début de l'impression 3D                                                                |
 | Séance 7 | Finalisation du modèle du PCB V2, **commande des composants et du PCB** <br>-fin de l'impression 3D                                                                                                                  |
-
+| Séance 8 | Finalisation du modèle 3D, montage PCB et robot prototype, test |
+| Séance 9 | Corrections et impressions 3D, montage du robot final |
 ---
 
 ## 📋 Répartition des tâches
