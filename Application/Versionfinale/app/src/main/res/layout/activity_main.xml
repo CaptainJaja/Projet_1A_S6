@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/btnForward"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@null"
+        android:contentDescription="@string/desc_forward_button"
+        android:rotation="270"
+        android:scaleType="fitCenter"
+        android:src="@drawable/arrowpng"
+        app:layout_constraintBottom_toTopOf="@+id/btnStop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <!-- Stop Button -->
+    <ImageButton
+        android:id="@+id/btnStop"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/breakbot"
+        app:layout_constraintTop_toBottomOf="@id/btnForward"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Left Button -->
+    <ImageButton
+        android:id="@+id/btnLeft"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:background="@null"
+        android:contentDescription="@string/desc_left_button"
+        android:rotation="180"
+        android:scaleType="fitCenter"
+        android:src="@drawable/arrowpng"
+        app:layout_constraintTop_toTopOf="@+id/btnStop"
+        app:layout_constraintEnd_toStartOf="@+id/btnStop"
+        app:layout_constraintBottom_toBottomOf="@+id/btnStop" />
+
+    <!-- Right Button -->
+    <ImageButton
+        android:id="@+id/btnRight"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:contentDescription="@string/desc_right_button"
+        android:rotation="0"
+        android:scaleType="fitCenter"
+        android:src="@drawable/arrowpng"
+        app:layout_constraintTop_toTopOf="@+id/btnStop"
+        app:layout_constraintStart_toEndOf="@+id/btnStop"
+        app:layout_constraintBottom_toBottomOf="@+id/btnStop" />
+
+    <!-- Backward Button -->
+    <ImageButton
+        android:id="@+id/btnBackward"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:background="@null"
+        android:contentDescription="@string/desc_backward_button"
+        android:rotation="90"
+        android:scaleType="fitCenter"
+        android:src="@drawable/arrowpng"
+        app:layout_constraintTop_toBottomOf="@+id/btnStop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- LED Toggle Button -->
+    <ImageButton
+        android:id="@+id/btnLED"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/togglebut"
+        app:layout_constraintTop_toBottomOf="@id/btnBackward"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Scan for Devices Button -->
+    <ImageButton
+        android:id="@+id/btnScan"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/scan"
+        app:layout_constraintTop_toBottomOf="@id/btnLED"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- ListView to display nearby devices -->
+    <ListView
+        android:id="@+id/lvDevices"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnScan"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

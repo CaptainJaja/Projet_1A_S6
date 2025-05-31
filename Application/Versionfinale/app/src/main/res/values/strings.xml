@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">Bluetooth Bot</string>
+    <string name="desc_forward_button">Move forward</string>
+    <string name="desc_left_button">Turn left</string>
+    <string name="desc_right_button">Turn right</string>
+    <string name="desc_backward_button">Move backward</string>
+
+</resources>
