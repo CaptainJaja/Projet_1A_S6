@@ -10,7 +10,11 @@
 
 void Motor_Stop(void);
 
+void LEDshow(void);
+
 void Motor_Forward(void) ;
+
+void ToggleSpeed(void);
 
 void Motor_Backward(void) ;
 
